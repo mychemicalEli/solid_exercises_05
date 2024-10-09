@@ -5,12 +5,12 @@ import contract.impl.PhoneOnlyContract;
 
 public class Main {
     public static void main(String[] args) {
-        Contract phoneOnlyContract = new PhoneOnlyContract();
+        PhoneContract phoneOnlyContract = new PhoneOnlyContract();
         phoneOnlyContract.unlimitedCalls();
         phoneOnlyContract.threeWayCall();
         phoneOnlyContract.conferenceCall();
 
-        Contract phoneInternetContract = new PhoneInternetContract();
+        InternetContract phoneInternetContract = new PhoneInternetContract();
         phoneInternetContract.internetAccess();
         phoneInternetContract.downloadLimit();
         phoneInternetContract.uploadLimit();
